@@ -448,18 +448,18 @@
         </div>
         <!-- Footer Section three -->
         <div class="footer-section-three">
+          <p class="footer-form-title">Subscribe</p>
           <form class="footer-form">
-            <div class="footer-field">
-              <label for="email" class="footer-label"> Subscribe </label>
+            <label class="footer-label">
               <input
-                id="email"
+                name="footer-email"
                 type="email"
                 class="footer-input"
                 placeholder="E-mail"
               />
-            </div>
+            </label>
             <button class="footer-btn" type="submit">
-              <span class="btn-text">Subscribe</span>
+              Subscribe
               <svg class="btn-icon" width="24" height="24">
                 <use href="./images/hw-5/symbol-defs.svg#icon-send"></use>
               </svg>
@@ -475,18 +475,67 @@
             <use href="./images/icon/symbol-icon.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
-        <form action="" class="backdrop-form">
-          <label for="modal-name" class="backdrop-label-name">Name</label>
-          <input id="modal-name" type="text" class="backdrop-input-name" />
-          <label for="modal-phone" class="backdrop-label-phone">Phone</label>
-          <input id="modal-phone" type="text" class="backdrop-input-email" />
-          <label for="modal-email" class="backdrop-label-email">Email</label>
-          <input id="modal-email" type="text" class="backdrop-input-name" />
-          <label for="modal-area" class="backdrop-input-area">Comment</label>
-          <textarea name="comment" id="modal-area" class="backdrop-area"></textarea>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="backdrop-form">
+          <div class="backdrop-form-field">
+            <label for="user-name" class="backdrop-label">Name</label>
+            <div class="input-container">
+              <input
+                id="user-name"
+                name="user-name"
+                type="text"
+                class="backdrop-input"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/hw-5/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="backdrop-form-field">
+            <label for="modal-phone" class="backdrop-label">Phone</label>
+            <div class="input-container">
+              <input id="modal-phone" type="text" class="backdrop-input" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/hw-5/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="backdrop-form-field">
+            <label for="modal-email" class="backdrop-label">Email</label>
+            <div class="input-container">
+              <input id="modal-email" type="text" class="backdrop-input" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/hw-5/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="backdrop-area">
+            <label for="modal-area" class="backdrop-label">Comment</label>
+
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="backdrop-textarea"
+              placeholder="Text input"
+            ></textarea>
+
+            <div class="backdrop-checkbox">
+             
+              <input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="checkbox-input visually-hidden" /> 
+              <label for="user-privacy"class="chekbox-label">
+                <span class="checkbox-box">
+                  <svg class="checkbox-icon" width="10" height="8">
+                    <use href="./images/hw-5/symbol-defs.svg#icon-Checkbox"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the 
+              <a href="#" class="label-link">Privacy Policy</a></label>
+            </div>
+
+<button class="button-submit">Send</button>
+
+          </div>
         </form>
       </div>
     </div>
