@@ -234,7 +234,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 100px;
   border-radius: 4px;
   background: #f4f4fd;
   margin-bottom: 8px;
@@ -828,7 +827,7 @@ input {
 
 .checkbox-input {
 }
-.chekbox-label {
+.checkbox-label {
   color: var(--lightslate, #8e8f99);
   font-size: 12px;
   font-weight: 400;
@@ -850,12 +849,15 @@ input {
   fill: transparent;
 }
 
-.checkbox-input:checked + .checkbox-box {
+.checkbox-input:checked + .checkbox-label .checkbox-box {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: #F4F4FD;
 }
 
+
+.checkbox-icon  {
+}
 .label-link {
   color: #4d5ae5;
 }
