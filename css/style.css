@@ -39,6 +39,14 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  display: block;
+}
+
 /* header */
 .current {
   position: relative;
@@ -176,14 +184,15 @@ img {
   background: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end; */
   padding: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 72px;
 }
 .is-hidden {
   visibility: hidden;
@@ -543,6 +552,82 @@ img {
 .footer-logo-studio {
   color: #f4f4fd;
 }
+.footer-section-two {
+  margin-right: 80px;
+}
+
+.footer-section-three {
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+}
+.footer-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.footer-input {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  height: 40px;
+  width: 264px;
+}
+input[type='email'] {
+  padding: 8px 16px;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+.footer-input::placeholder {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  letter-spacing: 0.48px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  width: 264px;
+}
+.footer-btn {
+  border-radius: 4px;
+  background: #4d5ae5;
+  padding: 8px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+  min-width: 165px;
+  cursor: pointer;
+}
+.btn-text {
+  /* margin-right: 16px; */
+  color: #fff;
+  text-align: center;
+  /* Button Text */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.btn-icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 20px;
+}
 
 /* section filter portfolio*/
 
@@ -664,4 +749,29 @@ img {
 }
 .filter-block-list-item:hover,
 .filter-block-list-item:focus {
+}
+
+.modal-title {
+  color:#2e2f42;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.backdrop-form {
+}
+.backdrop-label-name {
+}
+.backdrop-input-name {
+}
+.backdrop-label-phone {
+}
+.backdrop-input-email {
+}
+.backdrop-label-email {
+}
+.backdrop-area {
+  display: block;
 }
