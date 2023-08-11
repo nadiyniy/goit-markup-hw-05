@@ -545,7 +545,7 @@ input {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 5;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   border: none;
@@ -776,52 +776,50 @@ input {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #2E2F42;
+  fill: #2e2f42;
 }
-  .backdrop-input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    background-color: transparent;
-    padding-left: 38px;
-    outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.backdrop-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .backdrop-input:focus {
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
 
-.backdrop-input:focus + .input-icon{
+.backdrop-input:focus + .input-icon {
   fill: #4d5ae5;
 }
 
 .backdrop-area {
   margin-bottom: 16px;
-
 }
 
 .backdrop-textarea {
   width: 100%;
   height: 120px;
-  font-size: 12px; 
+  font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04em; 
-  color: rgba(46, 47, 66, 0.4); 
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
-  outline: transparent; 
+  outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .backdrop-textarea:focus {
-  border-color: #4D5AE5; 
+  border-color: #4d5ae5;
 }
 
 .backdrop-checkbox {
@@ -829,47 +827,44 @@ input {
 }
 
 .checkbox-input {
-
 }
 .chekbox-label {
-  color: var(--lightslate, #8E8F99);
-font-size: 12px;
-font-weight: 400;
-line-height: 1.17;
-letter-spacing: 0.04em;
-
+  color: var(--lightslate, #8e8f99);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .checkbox-box {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   display: inline-flex;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
   fill: transparent;
 }
 
 .checkbox-input:checked + .checkbox-box {
-  background-color: #404bbf; 
+  background-color: #404bbf;
   border: none;
-  fill: #F4F4FD; 
-
-
+  fill: #f4f4fd;
 }
 
 .label-link {
-  color: #4d5ae5;;
-
+  color: #4d5ae5;
 }
 
 .button-submit {
   display: block;
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -877,15 +872,14 @@ letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
   border: none;
-  background-color: #4D5AE5;
-  border-radius: 4px; 
+  background-color: #4d5ae5;
+  border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
 }
 .button-submit:focus,
 .button-submit:hover {
-  background-color: var(--ocean, #404BBF);
-
+  background-color: var(--ocean, #404bbf);
 }
 
 .input-icon {
@@ -897,4 +891,3 @@ letter-spacing: 0.04em;
 }
 .backdrop-label-email {
 }
-
